@@ -1,14 +1,8 @@
 Yougulp
 ================
 
-## License
 
-(The MIT License)
-
-Copyright (c) 2013 YouMeb and contributors.
-
-
-##Workflow 
+###Workflow 
 
 First, Start a youmebJS project:
 
@@ -28,3 +22,12 @@ Third, Running your project:
 1. page server: `npm start`
 2. open a new command line windows and go to same file path
 3. `youmeb` 
+
+
+
+### License
+
+(The MIT License)
+
+Copyright (c) 2013 YouMeb and contributors.
+
