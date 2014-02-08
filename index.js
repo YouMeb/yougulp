@@ -10,11 +10,11 @@ module.exports = function ($youmeb, $injector, $config, $generator, $prompt) {
     done();
   });
   
-  this.on('init', function (config, done) {
-    if ($youmeb.isCli) {
-      return done();
-    }
-  });
+  // this.on('init', function (config, done) {
+  //   if ($youmeb.isCli) {
+  //     return done();
+  //   }
+  // });
 
   // generator
   $youmeb.on('cli-yougulp', function (parser, args, done) {
