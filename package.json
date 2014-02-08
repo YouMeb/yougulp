@@ -1,0 +1,25 @@
+{
+  "name": "yougulp",
+  "version": "0.0.1",
+  "description": "yougulp",
+  "main": "index.js",
+  "dependencies": {
+
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youmeb/yougulp.git"
+  },
+  "keywords": [
+    "youmeb-package"
+  ],
+  "author": "Po-Ju Chen<tonyone0902@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youmeb/yougulp/issues"
+  }
+}
