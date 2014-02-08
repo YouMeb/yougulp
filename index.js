@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var path = require('path');
+var cp = require('child_process');
 
 module.exports = function ($youmeb, $injector, $config, $generator, $prompt) {
 
@@ -70,7 +71,7 @@ module.exports = function ($youmeb, $injector, $config, $generator, $prompt) {
       gn_app_index.createFile('./app/index.html', './app/index.html', {
         name: result.Projectname[0].toUpperCase() + result.Projectname.substr(1)
       }, done);
-
+      cp.exec('bower i')
     });
   });
 };
