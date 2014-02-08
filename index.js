@@ -61,14 +61,14 @@ module.exports = function ($youmeb, $injector, $config, $generator, $prompt) {
       });
       gn_app.createFile('./app.ls', './app.ls', {}, done);
       gn_bower.createFile('./bower.json', './bower.json', {
-        name: result.name
+        name: result.Projectname[0].toUpperCase() + result.Projectname.substr(1)
       }, done);
       gn_gulpfile.createFile('./gulpfile.ls', './gulpfile.ls', {}, done);
       gn_package.createFile('package.json', './package.json', {
-        name: result.name
+        name: result.Projectname[0].toUpperCase() + result.Projectname.substr(1)
       }, done);
       gn_app_index.createFile('./app/index.html', './app/index.html', {
-        name: result.name
+        name: result.Projectname[0].toUpperCase() + result.Projectname.substr(1)
       }, done);
 
     });
