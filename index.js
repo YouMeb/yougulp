@@ -10,11 +10,11 @@ module.exports = function ($youmeb, $injector, $config, $generator, $prompt) {
     done();
   });
   
-  // this.on('init', function (config, done) {
-  //   if ($youmeb.isCli) {
-  //     return done();
-  //   }
-  // });
+  this.on('init', function (config, done) {
+    if ($youmeb.isCli) {
+      return done();
+    }
+  });
 
   // generator
   $youmeb.on('cli-yougulp', function (parser, args, done) {
@@ -61,14 +61,14 @@ module.exports = function ($youmeb, $injector, $config, $generator, $prompt) {
       });
       gn_app.createFile('./app.ls', './app.ls', {}, done);
       gn_bower.createFile('./bower.json', './bower.json', {
-        name: result.Projectname[0].toUpperCase() + result.Projectname.substr(1)
+        name: result.name
       }, done);
       gn_gulpfile.createFile('./gulpfile.ls', './gulpfile.ls', {}, done);
       gn_package.createFile('package.json', './package.json', {
-        name: result.Projectname[0].toUpperCase() + result.Projectname.substr(1)
+        name: result.name
       }, done);
       gn_app_index.createFile('./app/index.html', './app/index.html', {
-        name: result.Projectname[0].toUpperCase() + result.Projectname.substr(1)
+        name: result.name
       }, done);
 
     });
